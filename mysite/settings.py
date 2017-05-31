@@ -134,6 +134,23 @@ NORECAPTCHA_SECRET_KEY = "6LfHigkUAAAAAHJDYymbwBQGKVncqilsnZtmWEVw"
 
 STATIC_URL = '/static/'
 
+# Heroku: Update database config from $DATABASE_URL.
+import dj_database_url
+db_from_env = dj_database_rul.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.10/howto/static-files/
+
+# The path to dir where collectstatic will collect for deployment
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# The URL to use when referring to static files
+STATIC_URL = '/static/'
+
+# Simplified static files serving
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 DAYS_OF_WEEK = (
     (7, 'All Week'),
     (0, 'Sunday'),

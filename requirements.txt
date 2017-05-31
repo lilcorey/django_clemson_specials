@@ -1,0 +1,7 @@
+dj-database-url==0.4.2
+Django==1.10
+django-nocaptcha-recaptcha==0.0.19
+gunicorn==19.7.1
+psycopg2==2.6.2
+python-dateutil==1.5
+whitenoise==3.3.0
