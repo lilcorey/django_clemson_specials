@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     'localhost',
     'adais.co',
     '127.0.0.1',
+    'gentle-lowlands-77199.herokuapp.com',
 ]
 
 
