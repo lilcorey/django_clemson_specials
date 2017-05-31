@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Adais</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'adais/ad-custom2.css' %}">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>     
+</head>
+
+<body>
+  <div class="container text-xs-center" style="padding-bottom: 30px">
+    <img src="{% static 'adais/ad-inf.png' %}" style="max-height: 100px">
+  </div>
+	<div class="container">
+
+   <div class="list-inline">
+   <h2 class="list-inline-item"> Registration</h2>
+   <a  class="list-inline-item" href="{% url 'adais:login' %}">Need to login?</a>
+   </div>
+
+   <form action="/adais/signup/" method="post">
+   {% csrf_token %}
+     {{form.as_p}} 
+   <div class="container">
+   <div class="row">
+   <div class="col-md-6 offset-md-3">
+   <input type="submit" value="Submit" class="btn btn-md btn-primary btn-block" />
+   </div>
+   </div>
+   </div>
+   </form>
+   
+  </div>
+</body>
+
+</html>

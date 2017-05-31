@@ -1,0 +1,36 @@
+h1 {
+    color: #fff;
+    /*padding-left: 2rem;*/
+}
+
+.ad-header-des{
+	color: #ffffff;
+}
+
+.list-group-item{
+	border: 0px solid #dddddd;
+} 
+.ad-nav-bar{
+  padding-right: 0px;
+  box-shadow: 0 2px 30px 0 rgba(0,0,0,0.36);
+  border-right-width: 0px;
+  margin-right: 0px;
+  height: 100vh;
+}
+
+.ad-main-col{
+	padding-right: 0px;
+  /* padding-left: 0px; */
+  padding-left: 2rem;
+  left: 0px;
+  position: inherit;
+}
+.ad-main-header-col{
+		padding-right: 0px;
+  /* padding-left: 0px; */
+  padding-left: 2rem;
+  left: 0px;
+  background-color: #00aced;
+  position: inherit;
+}
+        

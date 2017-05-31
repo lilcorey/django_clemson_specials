@@ -1,0 +1,75 @@
+{% extends 'adais/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="row" style="padding-top:40px;">
+
+    <div class="jumbotron">
+        <h1 class="display-3">Clemson Food Specials</h1>
+        <p class="lead">Find your favorite food deals around Clemson or search for something new using the sorting feature!</p>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">{{ dealTitle }} Deals</h3>
+      </div>
+      <hr />
+        <div class="row">
+        <!-- Display the current logged in username and the link to logout
+                    <div class="alert alert-success">You are logged in as {{ username }}.</div>
+        -->
+            <div class=" row">
+                <div class="col-md-6">
+                    {% for i in deals1 %}
+                    <div class="card text-center">
+                      <div class="card-header">
+                        {{ i.restaurantId }}
+                      </div>
+                      <div class="card-block ad-card-inverse">
+                        <h4 class="card-title"> {{ i.title }}</h4>
+                        <p class="card-text"> {{ i.description | linebreaks }} </p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                      </div>
+                      <div class="card-footer text-muted">
+                        {{ i.display_day }}
+                      </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="col-md-6">
+                    {% for i in deals2 %}
+                    <div class="card text-center">
+                      <div class="card-header">
+                        {{ i.restaurantId }}
+                      </div>
+                      <div class="card-block">
+                        <h4 class="card-title"> {{ i.title }}</h4>
+                        <p class="card-text"> {{ i.description | linebreaks }} </p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                      </div>
+                      <div class="card-footer text-muted">
+                        {{ i.display_day }}
+                      </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div> <!-- end row 2 col -->
+
+      <!-- 'url' template tag takes the name of the URL pattern
+           as an argument and renders the URL path. Here it renders
+           the path to the logout URL.
+      -->
+
+            </div>
+           <!-- <a href="{% url 'adais:addDeal' %}">Add a new Deal</a>
+            <a href="{% url 'adais:logout' %}">Logout</a> -->
+
+       </div> <!-- end container -->
+        <footer>
+            <div class="row ad-myFooter">
+            <p class="text-center"><small>Clemson Specials  |  <a href="http://edelman.io" style="color: #fff"> edelman.io</a></small></p>
+            </div>
+        </footer>
+</div>
+{% endblock %}

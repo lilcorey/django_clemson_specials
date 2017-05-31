@@ -1,0 +1,40 @@
+{% extends 'adais/base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+
+<form action="/adais/addDeal/" method="post" style="padding-top:40px;">
+    {% csrf_token %}
+    {{ form }}
+<!--
+    <label class="checkbox-inline"><input name="day[]" type="checkbox" value=7>All Week</label>
+
+    <div class="row">
+        <label class="checkbox-inline"><input name="day[]" type="checkbox" value=0>Sunday</label>
+        <label class="checkbox-inline"><input name="day[]" type="checkbox" value=1>Monday</label>
+        <label class="checkbox-inline"><input name="day[]" type="checkbox" value=2>Tuesday</label>
+        <label class="checkbox-inline"><input name="day[]" type="checkbox" value=3>Wednesday</label>
+        <label class="checkbox-inline"><input name="day[]" type="checkbox" value=4>Thursday</label>
+        <label class="checkbox-inline"><input name="day[]" type="checkbox" value=5>Friday</label>
+        <label class="checkbox-inline"><input name="day[]" type="checkbox" value=6>Saturday</label>
+    </div>
+<!--
+    <label for="title">Deal Title: </label>
+    <input id="title" type="text" name="title" value="{{ current_name }}">
+
+    <label for="description">Comment:</label>
+    <textarea  class="form-control" rows="2" id="description"></textarea>
+-->
+    <input type="submit" value="Submit" class="btn btn-md btn-primary btn-block" />
+</form>
+</div>
+</body>
+</html>
+{% endblock %}

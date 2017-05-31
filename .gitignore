@@ -97,5 +97,11 @@ ENV/
 # mkdocs documentation
 /site
 
+# Text backup files
+*.bak
+
+#Database
+*.sqlite3
+
 # mypy
 .mypy_cache/
