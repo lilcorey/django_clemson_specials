@@ -86,7 +86,7 @@ def user_login(request):
     user = authenticate(username=username, password=password)
     if user is not None:
       login(request, user)
-      return HttpResponseRedirect('/adais/')
+      return HttpResponseRedirect('/')
     else:
       messages.error(request, 'Invalid login credentials')
       return render(request, 'adais/login.html')
@@ -95,7 +95,7 @@ def user_login(request):
 
 
 def logout(request):
-  redirect('login/')
+  redirect('/login/')
 
 
 def page_not_found(request):
@@ -174,7 +174,7 @@ def addDeal(request):
           #print(aDeal.encode(sys.stdout.encoding, 'replace'))
           #print(aDeal.day)
           aDeal.save()
-        return HttpResponseRedirect('/adais/')
+        return HttpResponseRedirect('/')
 
     else:
       form = addDealForm()
@@ -184,4 +184,4 @@ def addDeal(request):
     token['form'] = form
     return render_to_response('adais/addDeal.html', token)
   else:
-    return HttpResponseRedirect('/adais/login/')
+    return HttpResponseRedirect('/login/')

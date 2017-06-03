@@ -14,6 +14,6 @@ urlpatterns = [
   url(r'^signup/$', views.signup, name='signup'),
   url(r'^signup/complete/$', views.signup_complete, name="signup_complete"),
   url(r'^login/$', views.user_login, name='login'),
-  url(r'^logout/$', lambda request: logout_then_login(request, "/adais"), name="logout"),
+  url(r'^logout/$', lambda request: logout_then_login(request, "/"), name="logout"),
   url(r'^addDeal/$', views.addDeal, name='addDeal'),
 ]
