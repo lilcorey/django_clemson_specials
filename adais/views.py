@@ -10,6 +10,7 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 from django.template import loader, RequestContext
 from django.template.context_processors import csrf
 from datetime import datetime as date
+import calendar
 
 from .models import Deal, Restaurant
 from .forms import *
@@ -29,7 +30,8 @@ def dis_day(x):
 
 def index(request):
     #query based on request
-    today = date.today().strftime("%A")
+    #today = date.today().strftime("%A")
+    today = calendar.day_name[datetime.now(pytz.timezone('America/New_York')).weekday()]
     todayId = 0
     for item in DAYS_OF_WEEK:
       if item[1] == today:
