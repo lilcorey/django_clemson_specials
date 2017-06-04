@@ -12,7 +12,8 @@ from django.template.context_processors import csrf
 from datetime import datetime
 import calendar
 import pytz
-
+import math
+import sys
 from .models import Deal, Restaurant
 from .forms import *
 
@@ -41,10 +42,10 @@ def index(request):
     #p = Deal.objects.all().order_by('restaurantId')
     if p.exists():
       if p.count() >= 2:
-        half = p.count()/2
+        half = int( math.ceil( (p.count()/2.0) ) )
         return render( request, "adais/dashboard.html",
                        {'username': request.user.username,
-                        'deals1' : p[0:half], 'deals2' : p[half:],
+                        'deals1' : p[:half], 'deals2' : p[half:],
                         'dealTitle': "Today's"} )
       else:
         return render( request, "adais/dashboard.html",
@@ -55,9 +56,6 @@ def index(request):
       return render(request, "adais/dashboard.html",
                   {'username': request.user.username, 'deals1': {}, 'deals2': {}, 'dealTitle' : "Today's" })
 
-  # return HttpResponseRedirect('dashboard/')
-  #else:
-   # return HttpResponseRedirect('login/')
 
 
 def signup(request):
@@ -111,7 +109,7 @@ def restaurant(request, url_id):
   p = Deal.objects.filter(restaurantId_id=url_id)
   if p.exists():
     if p.count() >= 2:
-      half = p.count() / 2
+      half = int( math.ceil( (p.count() / 2.0) ) )
       return render(request, "adais/dashboard.html",
                     {'username': request.user.username,
                      'deals1': p[0:half], 'deals2': p[half:],
@@ -136,7 +134,7 @@ def day(request, url_id):
       titleName = dis_day(item[1])
   if p.exists():
     if p.count() >= 2:
-      half = p.count() / 2
+      half = int( math.ceil( (p.count() / 2.0) ) )
       return render(request, "adais/dashboard.html",
                     {'username': request.user.username,
                      'deals1': p[0:half], 'deals2': p[half:],
