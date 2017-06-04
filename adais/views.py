@@ -9,8 +9,9 @@ from django.contrib.auth.forms import UserCreationForm
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.template import loader, RequestContext
 from django.template.context_processors import csrf
-from datetime import datetime as date
+from datetime import datetime
 import calendar
+import pytz
 
 from .models import Deal, Restaurant
 from .forms import *
