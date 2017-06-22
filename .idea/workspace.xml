@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ad2a27-5b9a-4cb1-aefa-8650b90decf5" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/adais/static/adais/ad-custom2.css" afterPath="$PROJECT_DIR$/adais/static/adais/clemspec.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adais/templates/adais/404.html" afterPath="$PROJECT_DIR$/adais/templates/adais/404.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adais/templates/adais/base.html" afterPath="$PROJECT_DIR$/adais/templates/adais/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adais/templates/adais/dashboard.html" afterPath="$PROJECT_DIR$/adais/templates/adais/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adais/templates/adais/login.html" afterPath="$PROJECT_DIR$/adais/templates/adais/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adais/templates/adais/signup_form.html" afterPath="$PROJECT_DIR$/adais/templates/adais/signup_form.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,11 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/adais/templates/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="495">
+              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/adais/templates/adais/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -81,11 +85,11 @@
         <option value="$PROJECT_DIR$/adais/views.py" />
         <option value="$PROJECT_DIR$/adais/static/adais/ad-custom2.css" />
         <option value="$PROJECT_DIR$/adais/static/adais/clemspec.css" />
-        <option value="$PROJECT_DIR$/adais/templates/adais/base.html" />
         <option value="$PROJECT_DIR$/adais/templates/adais/dashboard.html" />
         <option value="$PROJECT_DIR$/adais/templates/adais/login.html" />
         <option value="$PROJECT_DIR$/adais/templates/adais/signup_form.html" />
         <option value="$PROJECT_DIR$/adais/templates/adais/404.html" />
+        <option value="$PROJECT_DIR$/adais/templates/adais/base.html" />
       </list>
     </option>
   </component>
@@ -493,14 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/adais/templates/adais/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adais/templates/adais/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-225">
@@ -513,14 +509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="58" lean-forward="false" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adais/templates/adais/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -543,8 +531,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adais/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="495">
+          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adais/templates/adais/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adais/templates/adais/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
