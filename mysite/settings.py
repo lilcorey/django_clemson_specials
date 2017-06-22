@@ -31,6 +31,8 @@ ALLOWED_HOSTS = [
     'localhost',
     'adais.co',
     '127.0.0.1',
+    'clemsonspecials.com.herokudns.com',
+    'www.clemsonspecials.com.herokudns.com',
     'gentle-lowlands-77199.herokuapp.com',
 ]
 
