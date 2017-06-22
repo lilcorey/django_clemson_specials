@@ -1,4 +1,4 @@
-.ad-header{
+.clemspec-header{
 	background-color: #3b5998;
 	position: fixed;
 	z-index: 4;
@@ -25,18 +25,18 @@ a.nav-link:hover
     color: #fff;
 }
 
-.ad-2col{
+.clemspec-2col{
     list-style-type: none;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
 }
 
-.ad-header-button{
+.clemspec-header-button{
   margin-left: 3px;
 }
 
-.ad-header-button-group{
+.clemspec-header-button-group{
   margin-right: 16px;
 }
 .img-center {margin:0 auto;}
@@ -46,7 +46,7 @@ a.nav-link:hover
   margin-left: 16px;
 }
 
-.ad-myFooter{
+.clemspec-myFooter{
   background-color: #3b5998;
   color: #fff;
   padding: 50px 0 40px 0;
